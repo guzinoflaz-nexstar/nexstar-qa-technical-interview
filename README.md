@@ -3,26 +3,38 @@
 Welcome!  
 This repository contains the environment for the **Live Playwright Coding Challenge**.
 
-You do NOT need to install anything locally.
+You do NOT need to install anything locally.  
+Everything runs inside **GitHub Codespaces**.
 
 ---
 
-## 👉 Open Interview Environment in GitHub Codespaces
+## 🚀 Open Interview Environment (One-Click)
 
-Click below to start coding in your browser (no setup required):
+Click below to instantly launch a ready-to-use Codespace:
 
-[![Open in GitHub Codespaces](https://img.shields.io/badge/Open_in-Codespaces-blue?logo=github)](https://codespaces.new/YOUR_GITHUB_USERNAME/nexstar-qa-technical-interview)
+👉 https://github.com/codespaces/new/guzinoflaz-nexstar/nexstar-qa-technical-interview?quickstart=1
+
+This will automatically:
+
+- Create a new Codespace  
+- Install dependencies  
+- Install Playwright browsers  
+- Open a VS Code environment in your browser  
+
+No setup is required.
 
 ---
 
 # 🧪 Playwright Challenge (The Guardian)
 
-Using Playwright + TypeScript, complete the test in  
-`tests/guardian-challenge.spec.ts`:
+Using **Playwright + TypeScript**, complete the test in:  
+`tests/guardian-challenge.spec.ts`
+
+### Your task:
 
 1. Navigate to: https://www.theguardian.com/international  
 2. Locate the **first article headline** on the homepage  
-3. Store the title text  
+3. Store the headline text  
 4. Click the article  
 5. On the article page, retrieve the `<h1>` headline  
 6. Validate that the article headline **matches or contains** the homepage headline
@@ -31,9 +43,17 @@ Using Playwright + TypeScript, complete the test in
 
 ## ▶️ Running the Tests
 
-Inside Codespaces terminal:
+Inside the Codespaces terminal:
 
 ```bash
-npm install
-npx playwright install
 npx playwright test
+
+To view the HTML report:
+npx playwright show-report
+
+📁 Project Structure
+├── tests/
+│   └── guardian-challenge.spec.ts
+├── playwright.config.ts
+├── package.json
+└── README.md
