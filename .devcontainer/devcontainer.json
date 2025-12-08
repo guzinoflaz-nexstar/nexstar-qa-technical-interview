@@ -1,0 +1,6 @@
+{
+  "name": "Playwright Dev",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:latest",
+
+  "postCreateCommand": "npx playwright install --with-deps"
+}
