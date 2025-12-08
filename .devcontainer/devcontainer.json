@@ -1,7 +1,7 @@
 {
   "name": "Playwright Codespace",
   "image": "mcr.microsoft.com/playwright:v1.41.0-jammy",
-  "postCreateCommand": "npm install && npx playwright install --with-deps",
+  "postCreateCommand": "git checkout -b challenge && npm install && npx playwright install --with-deps",
   "customizations": {
     "vscode": {
       "extensions": [
