@@ -1,0 +1,31 @@
+
+# Testing (Optional)
+__tests__/ 
+test-results/
+playwright-report/
+
+# Temporary files
+assets/temp/*
+assets/img/generated/
+assets/videos/
+
+# Playwright
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Logs
+logs/
+logs/*
+
+# Environment files (do not commit secrets)
+.env
+*.env
+!.env.example
+
+# Node & tooling
+node_modules/
+coverage/
+.vscode/
+.DS_Storetools/__pycache__/
+package-lock.json
