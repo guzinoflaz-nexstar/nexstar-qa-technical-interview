@@ -74,7 +74,7 @@ https://www.theguardian.com/international
 #### Submit Responses
 
 1. Commit your changes.
-2. Push them to the `review` branch.
+2. Push them to the `challenge` branch.
 3. Create a PR with your name as the title.
 
 ---
