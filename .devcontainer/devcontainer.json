@@ -1,6 +1,12 @@
 {
-  "name": "Playwright Dev",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:latest",
-
-  "postCreateCommand": "npx playwright install --with-deps"
+  "name": "Playwright Codespace",
+  "image": "mcr.microsoft.com/playwright:v1.41.0-jammy",
+  "postCreateCommand": "npm install && npx playwright install --with-deps",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-playwright.playwright"
+      ]
+    }
+  }
 }
