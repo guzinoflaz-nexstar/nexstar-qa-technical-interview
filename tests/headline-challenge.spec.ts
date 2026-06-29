@@ -16,4 +16,5 @@ import { test, expect } from '@playwright/test';
 
 test('guardian headline challenge', async ({ page }) => {
   // Candidate's solution goes here
+  throw new Error('No valid test was executed. Please replace this line with the actual solution.');
 });
