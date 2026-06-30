@@ -49,8 +49,10 @@ Test requirements:
 #### Submit Responses
 
 1. Commit your changes.
-2. Push them to the `challenge` branch.
-3. Create a PR with your name as the title.
+2. Click on the Source Control tab.
+3. Click on Publish Branch.
+4. On the bottom-right corner, click on Create Pull Request.
+5. Create a PR with your name as the title.
 
 ---
 
