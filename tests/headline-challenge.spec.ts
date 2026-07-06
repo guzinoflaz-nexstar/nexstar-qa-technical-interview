@@ -1,4 +1,3 @@
-
 /**
  * Test requirements:
 
@@ -13,8 +12,24 @@
  */
 
 import { test, expect } from '@playwright/test';
+import { InternationalNewsPage } from '../pages/InternationalNewsPage';
 
-test('guardian headline challenge', async ({ page }) => {
-  // Candidate's solution goes here
-  throw new Error('No valid test was executed. Please replace this line with the actual solution.');
+test('guardian headline challenge @test_headline', async ({ page }) => {
+  const home = new InternationalNewsPage(page);
+
+  // Navigate to the International homepage (handles the cookie-consent dialog).
+  await home.goto();
+
+  // Locate the first article headline and store its text.
+  const homepageHeadline = await home.firstHeadlineText();
+  expect(homepageHeadline).not.toEqual('');
+
+  // Click the article.
+  await home.openFirstArticle();
+
+  // Retrieve the article headline from the article page (the level-1 heading).
+  const articleHeadline = page.getByRole('heading', { level: 1 });
+
+  // Validate that the article headline matches / contains the homepage headline.
+  await expect(articleHeadline).toContainText(homepageHeadline);
 });
