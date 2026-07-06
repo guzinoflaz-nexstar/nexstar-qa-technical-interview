@@ -53,7 +53,7 @@ Test requirements:
 > Your Pull Request then goes from **your fork -> this repository**.
 
 1. Open `tests/headline-challenge.spec.ts` and replace the placeholder
-   (the line that throws `No valid test was executed`) with your solution.
+   with your solution.
 2. Run the test and make sure it passes:
    `npx playwright test --grep @test_headline`
 3. Open the **Source Control** tab.
