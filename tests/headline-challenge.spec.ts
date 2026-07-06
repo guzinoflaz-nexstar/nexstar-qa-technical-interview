@@ -20,14 +20,10 @@ test('guardian homepage headline matches article headline @test_headline', async
   const homepageHeadline = (await firstHeadline.innerText()).trim();
   expect(homepageHeadline.length).toBeGreaterThan(0);
 
-  // 4. Click the article
+  // 4. Click the articlee
   await firstHeadline.click();
   await page.waitForLoadState('domcontentloaded');
 
-  // 5. Retrieve the article headline (H1 on article page)
-  const articleHeadline = (
-    await page.getByRole('heading', { level: 1 }).first().innerText()
-  ).trim();
 
   // 6. Validate: article headline matches OR contains the homepage headline
   const normalize = (s: string) => s.replace(/\s+/g, ' ').trim().toLowerCase();
