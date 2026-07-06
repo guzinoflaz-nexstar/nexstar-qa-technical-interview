@@ -48,11 +48,25 @@ Test requirements:
 
 #### Submit Responses
 
-1. Commit your changes.
-2. Click on the Source Control tab.
-3. Click on Publish Branch.
-4. On the bottom-right corner, click on Create Pull Request.
-5. Create a PR with your name as the title.
+> This is a **public repository** and you most likely do NOT have write access.
+> When you push, GitHub will offer to create a **fork** under account your accept it. 
+> Your Pull Request then goes from **your fork -> this repository**.
+
+1. Open `tests/headline-challenge.spec.ts` and replace the placeholder
+   (the line that throws `No valid test was executed`) with your solution.
+2. Run the test and make sure it passes:
+   `npx playwright test --grep @test_headline`
+3. Open the **Source Control** tab.
+4. **Stage** your change (hover the file, click the `+`).
+5. Type a commit message, then click **Commit** (the check mark).
+6. Click **Publish Branch** (or **Sync Changes**). If you are told you lack
+   permission to push, allow GitHub to create/use your fork.
+7. Click **Create Pull Request**. Make sure the direction is:
+   `your-fork:challenge  ->  guzinoflaz-nexstar/nexstar-qa-technical-interview:main`
+8. Set the PR title to your full name and click **Create pull request**.
+
+> If GitHub says *"There isn't anything to compare"*, your solution is not
+> yet committed go back to steps 3-5.
 
 ---
 
